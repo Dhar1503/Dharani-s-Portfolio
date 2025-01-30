@@ -188,12 +188,12 @@
     
             
         #projects {
-            padding: 60px 20px;
-            text-align: center; /* Aligns heading to the left */
+            padding: 60px 20px; 
             position: relative;
         }
         #projects h2{
             font-size: 2.5rem;
+            text-align:center;
             margin-left: 100px; /* Adds the same 100px margin as the container */
             margin-bottom: 30px; /* Spacing between heading and projects */
         }
@@ -245,6 +245,9 @@
             #projects h2,
             .projects-container {
             margin-left: 20px; /* Smaller margin on mobile */
+            font-size:small;
+                
+                
             }
         }  
    
@@ -519,20 +522,6 @@
     .social-links a {
         font-size: 1.2rem; /* Smaller icon text size on mobile */
     }
-
-    .about {
-        display: flex;
-        flex-direction: column;
-        /* Stack the sections vertically on mobile */
-    }
-    .about2 {
-        display: flex;
-        font-size: small;
-    }
-    .about2 p{
-        font-size: small;
-        display:flex;
-    }
 }
 
 
@@ -546,6 +535,7 @@
         flex-direction: column;
         padding: 10px 5%;
         max-width:100%;
+    object-fit: cover;
         font-size:small;
     }
     
@@ -556,6 +546,7 @@
     .about2 p {
         font-size: small;
         line-height: 1.5;
+        max-width:100%;
     }
 
     /* Ensure Skill Cards Stay Responsive */
