@@ -544,6 +544,90 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Skill Cards */
+.skill-card {
+    width: 100%;
+    max-width: 300px; /* Prevents cards from becoming too wide */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 40px 5%;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 400px; /* Keeps cards responsive */
+    margin: 10px auto;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* 📌 Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Adjust About Section */
+    #about {
+        padding: 30px 5%;
+    }
+    
+    #about h2 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    #about p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* Adjust Projects Section */
+    #projects {
+        padding: 30px 5%;
+    }
+
+    .project-card {
+        max-width: 90%; /* Ensure it doesn't stretch too much */
+    }
+
+    /* Ensure Skill Cards Stay Responsive */
+    .skill-card {
+        max-width: 100%;
+    }
+}
+
         
     </style>
 
