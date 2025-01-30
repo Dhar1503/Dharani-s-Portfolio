@@ -198,7 +198,10 @@
             margin-bottom: 30px; /* Spacing between heading and projects */
         }
         .projects-container {
-            display: flex;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /*display: flex;*/
             overflow-x: auto;
             scroll-behavior: smooth;
             gap: 30px;
@@ -436,7 +439,7 @@
 
         #about h1 {
             font-size: 2.5rem;
-            color: white; /* Make sure text is visible */
+            color: white; 
             text-align: left;
             padding-top: 20px; /* Adjust padding as necessary */
         }
@@ -464,6 +467,53 @@
             color: #767373;
         }
 
+
+        /* Large screens */
+.rightSection img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 450px; /* 450px max on larger screens */
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+    .rightSection img {
+        width: 100%;
+        max-width: 100%; /* Allow full width on small screens */
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .firstSection {
+        display: flex;
+        flex-direction: column; /* Stack the sections vertically on mobile */
+        align-items: center; /* Center the content */
+        text-align: center;
+    }
+
+    .firstSection > div {
+        width: 100%; /* Full width for columns on mobile */
+        padding: 20px; 
+    }
+
+    .leftSection {
+        font-size: 2rem; 
+    }
+
+    .rightSection img {
+        width: 80%;
+        height: auto;
+        margin-top: 20px; 
+    }
+
+    .social-links a {
+        font-size: 1.2rem; /* Smaller icon text size on mobile */
+    }
+}
 
     </style>
 
